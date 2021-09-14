@@ -1,0 +1,27 @@
+@herokurul = https://discalproyect.herokuapp.com
+@url = {{localurl}}
+@localurl = http://localhost:3000
+### Get mensaje
+GET {{url}}/mensaje HTTP/1.1
+
+### POST mensaje
+POST {{url}}/mensaje
+Content-Type: application/json 
+
+{
+    "nick":"classtest",
+    "mensaje":"we"
+}
+
+### delete mensaje
+DELETE  {{url}}/mensaje/1
+Content-Type: application/json 
+
+
+### put mensaje
+PUT  {{url}}/mensaje/2
+Content-Type: application/json 
+{
+    "nick":"PRO",
+    "mensaje":"UWU"
+}
